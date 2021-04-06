@@ -1,23 +1,28 @@
-// HelloWorld2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// UserDataTypes1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include "Employee.h"
 #include <iostream>
 using namespace std;
 
-
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::cout << "git changes\n";
+    Employee employees[5];
+    unsigned short numEmployess;
+    cout << "Number of employess: ";
+    cin >> numEmployess;
 
-    int age;
-    cin >> age;
-    cout << "Age: " << age;
-  
+    for (int i = 0; i < numEmployess; i++) {
+        employees[i].Read();
+    
+    }
 
-
+    for (int i = 0; i < numEmployess; i++) {
+        employees[i].Write();
+    
+    }
 
 }
+    
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu

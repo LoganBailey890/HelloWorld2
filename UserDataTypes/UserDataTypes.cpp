@@ -1,22 +1,38 @@
-// HelloWorld2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// UserDataTypes.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
+#include "Sandwich.h"
 using namespace std;
+typedef double currency;
+typedef unsigned short byte;
+
+struct RGB {
+	byte r;
+	byte g;
+	byte b;
+};
+
+void f1();
+void f1() {}
 
 
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::cout << "git changes\n";
+	Sandwich sandwich;
+	sandwich.Read();
+	sandwich.Write();
+	cout << SHOP_NAME;
+	f1();
+	f2();
+	currency balance;
+	enum class Diffuculty {
+		Easy,
+		Medium,
+		Hard
+	};
 
-    int age;
-    cin >> age;
-    cout << "Age: " << age;
-  
-
-
-
+	Diffuculty difficulty = Diffuculty::Easy;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
